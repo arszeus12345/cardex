@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arzopa Clone - TechStore</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar text-center py-2 text-white bg-dark fs-7 fw-medium text-uppercase tracking-wider">
+        Miễn phí giao hàng cho mọi đơn hàng | Bảo hành 1 năm | 1 đổi 1
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 border-bottom">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand fw-black fs-2 tracking-tighter" href="#home" onclick="router()">
+                ARZOPA<span class="text-primary fs-5 ms-1">Store</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample">
+                <ul class="navbar-nav mx-auto fs-6 fw-bold text-uppercase d-flex gap-lg-4">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-path="home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products" data-path="products">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Về chúng tôi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hỗ trợ</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-4 d-none d-lg-flex">
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-search"></i></a>
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-person"></i></a>
+                    <a href="#" class="text-dark fs-5 position-relative">
+                        <i class="bi bi-cart3"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="font-size: 0.6rem;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow-1">
+        <div id="app-container" class="page-transition">
+            <!-- Dynamic Content Injected Here -->
+            <div class="d-flex justify-content-center py-5 my-5">
+                <div class="spinner-border text-dark" role="status">
+                    <span class="visually-hidden">Đang tải...</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-5 pb-4 mt-auto">
+        <div class="container px-4">
+            <div class="row gy-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-4 tracking-wider">VỀ ARZOPA</h5>
+                    <p class="text-gray-400 fs-7">Chúng tôi cung cấp các giải pháp hiển thị và phụ kiện thông minh hàng
+                        đầu, mang lại trải nghiệm tối ưu cho công việc và giải trí của bạn.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4 tracking-wider">SẢN PHẨM</h5>
+                    <ul class="list-unstyled text-gray-400 fs-7 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-decoration-none text-reset hover-white">Màn Hình Di Động</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset hover-white">Phụ Kiện</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset hover-white">Samsung Dex</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4 tracking-wider">HỖ TRỢ</h5>
+                    <ul class="list-unstyled text-gray-400 fs-7 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-decoration-none text-reset hover-white">Liên Hệ</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset hover-white">Chính Sách Bảo Hành</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset hover-white">Vận Chuyển & Đổi Trả</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none text-reset hover-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-4 tracking-wider">ĐĂNG KÝ NHẬN TIN</h5>
+                    <p class="text-gray-400 fs-7 mb-3">Nhận thông tin cập nhật về sản phẩm mới và các chương trình
+                        khuyến mãi.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control bg-transparent text-white border-secondary"
+                            placeholder="Email của bạn">
+                        <button class="btn btn-outline-light px-4" type="button">Gửi</button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-top border-secondary pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <div class="text-gray-400 fs-7">&copy; 2026 Arzopa Store by Tech. All rights reserved.</div>
+                <div class="d-flex gap-3 fs-5 text-gray-400">
+                    <i class="bi bi-facebook hover-white cursor-pointer"></i>
+                    <i class="bi bi-instagram hover-white cursor-pointer"></i>
+                    <i class="bi bi-youtube hover-white cursor-pointer"></i>
+                    <i class="bi bi-tiktok hover-white cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

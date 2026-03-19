@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Utilities */
+.fw-black {
+    font-weight: 900;
+}
+.tracking-wider {
+    letter-spacing: 0.05em;
+}
+.tracking-tighter {
+    letter-spacing: -0.05em;
+}
+.fs-7 {
+    font-size: 0.875rem;
+}
+.text-gray-400 {
+    color: #9ca3af !important;
+}
+.bg-black {
+    background-color: #000000 !important;
+}
+
+/* Utilities */
+.object-fit-cover {
+    object-fit: cover;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(8px);
+}
+.navbar-brand {
+    color: #000000 !important;
+}
+.nav-link {
+    color: #1a1a1a !important;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000000;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+/* Page Transitions */
+.page-transition {
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: #111;
+    min-height: 600px;
+}
+.hero-overlay {
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 100%);
+}
+
+/* Product Cards */
+.product-card {
+    background-color: transparent;
+    overflow: visible;
+}
+.product-card:hover {
+    box-shadow: none !important;
+}
+
+/* Base Card Hover Interactions */
+.group-hover .btn-buy-now {
+    background-color: transparent;
+    color: #1a1a1a;
+    border-color: #e5e7eb;
+}
+
+.group-hover:hover .btn-buy-now {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Image Zoom */
+.img-zoom-container {
+    overflow: hidden;
+    background-color: #f3f4f6; /* Light gray placeholder background */
+    border-radius: 4px;
+}
+.product-img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    mix-blend-mode: multiply; /* Helps images blend into light backgrounds */
+}
+.group-hover:hover .product-img {
+    transform: scale(1.08);
+}
+
+.product-detail-img {
+    transition: transform 0.4s ease;
+}
+.product-detail-img:hover {
+    transform: scale(1.02);
+}
+
+/* Buttons */
+.btn-dark {
+    background-color: #000000;
+    border-color: #000000;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.btn-dark:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.btn-outline-dark {
+    border-width: 2px;
+    border-radius: 4px;
+}
+.btn-outline-dark:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Footer Hover */
+.hover-white {
+    transition: color 0.2s ease;
+}
+.hover-white:hover {
+    color: #ffffff !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

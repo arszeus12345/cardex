@@ -1,0 +1,103 @@
+{
+    "categories": [
+        {
+            "id": "man-hinh",
+            "name": "Màn hình di động"
+        },
+        {
+            "id": "samsung-dex",
+            "name": "Box Samsung Dex"
+        },
+        {
+            "id": "man-hinh-oto",
+            "name": "Màn hình tích hợp Oto"
+        },
+        {
+            "id": "gia-do-oto",
+            "name": "Khung Giá Đở Oto"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "categoryId": "man-hinh",
+            "name": "Màn hình Arzopa 14.0\"",
+            "price": "2.800.000đ",
+            "image": "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=400&q=80",
+            "shortDesc": "Màn hình mini, FHD siêu nhẹ.",
+            "description": "Nhỏ gọn 14 inch, độ mỏng 0.3 inch, dễ dàng cất túi xách."
+        },
+        {
+            "id": 2,
+            "categoryId": "man-hinh",
+            "name": "Màn hình Arzopa 15.6\"",
+            "price": "3.500.000đ",
+            "image": "https://images.unsplash.com/photo-1551645120-d70bfe84c826?auto=format&fit=crop&w=400&q=80",
+            "shortDesc": "Màn hình 1080P FHD, mỏng nhẹ.",
+            "description": "Màn hình 15.6 inch FHD hiển thị sắc nét, góc nhìn rộng 178 độ."
+        },
+        {
+            "id": 3,
+            "categoryId": "man-hinh",
+            "name": "Màn hình Arzopa 16.1\" 144Hz",
+            "price": "4.200.000đ",
+            "image": "https://images.unsplash.com/photo-1586952518485-11b180e92764?auto=format&fit=crop&w=400&q=80",
+            "shortDesc": "Màn hình gaming tần số quét cao.",
+            "description": "Chuyên dùng cho game thủ với tần số quét 144Hz siêu mượt."
+        },
+        {
+            "id": 4,
+            "categoryId": "samsung-dex",
+            "name": "Samsung DeX Station",
+            "price": "1.200.000đ",
+            "image": "https://images.unsplash.com/photo-1590489623631-08dc602a83ea?auto=format&fit=crop&w=400&q=80",
+            "shortDesc": "Đế mở rộng cho điện thoại Samsung.",
+            "description": "Biến điện thoại của bạn thành PC nhanh chóng với cổng HDMI, USB và tản nhiệt."
+        },
+        {
+            "id": 5,
+            "categoryId": "samsung-dex",
+            "name": "Cáp DeX Cable",
+            "price": "350.000đ",
+            "image": "https://images.unsplash.com/photo-1538356111053-748a48ef26ce?auto=format&fit=crop&w=400&q=80",
+            "shortDesc": "Cáp Type-C sang HDMI nhỏ gọn.",
+            "description": "Giải pháp gọn nhẹ nhất để dùng DeX mà không cần Dock cồng kềnh."
+        },
+        {
+            "id": 6,
+            "categoryId": "man-hinh-oto",
+            "name": "Màn Hình Android CarPlay 7\"",
+            "price": "3.900.000đ",
+            "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=400&q=80",
+            "shortDesc": "Hỗ trợ chuẩn Apple CarPlay.",
+            "description": "Tích hợp không dây, ra lệnh bằng giọng nói an toàn."
+        },
+        {
+            "id": 7,
+            "categoryId": "man-hinh-oto",
+            "name": "Màn Hình Ô tô Zestech 9\"",
+            "price": "6.500.000đ",
+            "image": "https://images.unsplash.com/photo-1533036814282-3e284a141c2c?auto=format&fit=crop&w=400&q=80",
+            "shortDesc": "Màn hình đa năng cho xe hơi.",
+            "description": "Giải trí đỉnh cao, dẫn đường GPS thông minh tích hợp camera lùi."
+        },
+        {
+            "id": 8,
+            "categoryId": "gia-do-oto",
+            "name": "Khung Giá Đỡ Nam Châm",
+            "price": "250.000đ",
+            "image": "https://images.unsplash.com/photo-1620054366668-cb0ed5136ff9?auto=format&fit=crop&w=400&q=80",
+            "shortDesc": "Giá đỡ từ tính mạnh mẽ.",
+            "description": "Thiết kế hít nam châm chắc chắn ngay cả khi xe đi qua đường giằng sốc."
+        },
+        {
+            "id": 9,
+            "categoryId": "gia-do-oto",
+            "name": "Giá Đỡ Kẹp Khe Gió",
+            "price": "180.000đ",
+            "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=80",
+            "shortDesc": "Gắn khe gió điều hòa tiện lợi.",
+            "description": "Xoay xoay 360 độ, không làm che khuất tầm nhìn khi lái xe."
+        }
+    ]
+}
